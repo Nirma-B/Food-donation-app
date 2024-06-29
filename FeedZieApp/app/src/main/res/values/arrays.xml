@@ -1,0 +1,15 @@
+<resources>
+    <!-- Language options for ListPreference -->
+    <string-array name="language_options">
+        <item>English</item>
+        <item>French</item>
+        <item>Spanish</item>
+        <!-- Add more language options as needed -->
+    </string-array>
+    <string-array name="language_values">
+        <item>en</item>
+        <item>fr</item>
+        <item>es</item>
+        <!-- Add more language values as needed (corresponding to the options) -->
+    </string-array>
+</resources>

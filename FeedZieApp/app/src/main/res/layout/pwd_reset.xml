@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@drawable/bthre"
+    android:gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".ResetPasswordActivity"
+    tools:ignore="Autofill">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/round_background"
+        android:padding="15dp"
+        android:src="@drawable/lock"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/merienda_one"
+        android:gravity="center"
+        android:text="@string/forgot_password"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/respwdemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merienda_one"
+            android:hint="@string/enter_your_email"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/respwdsend"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="@font/merienda_one"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/respwdafter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/merienda_one"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".mission">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Mission"
+            android:fontFamily="@font/merienda_one"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:layout_margin="20dp"/>
+
+        <ImageView
+            android:layout_width="410dp"
+            android:layout_height="410dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/charity"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/merienda_one"
+            android:paddingLeft="10sp"
+            android:text="Give Food to those in Need?"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/merienda_one"
+            android:paddingLeft="10sp"
+            android:text="Actions speak louder than words."
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/merienda_one"
+            android:text="Start donating today"
+            android:textStyle="italic"
+            android:paddingLeft="90sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView >

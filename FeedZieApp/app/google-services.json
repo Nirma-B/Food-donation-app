@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "243282867205",
+    "project_id": "feedzie-app",
+    "storage_bucket": "feedzie-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243282867205:android:53ff244ab1e9a5e56b586c",
+        "android_client_info": {
+          "package_name": "com.example.feedzieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243282867205-95qfep9lvh3qtitot9kggt3h4fqbu1bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvY_fs2RlCshh-tU7k1OmA2FTIg4YgI7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243282867205-95qfep9lvh3qtitot9kggt3h4fqbu1bf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

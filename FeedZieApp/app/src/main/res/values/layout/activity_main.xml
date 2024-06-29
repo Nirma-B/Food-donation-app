@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="UselessParent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/My_dashboard"
+            android:fontFamily="@font/opensans"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_margin="20dp"/>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDonate"
+                android:clickable="true"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/zircon"
+                android:layout_margin="10dp"
+                android:focusable="true"
+                tools:ignore="KeyboardInaccessibleWidget">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/donate"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/donate"
+                        android:layout_marginTop="15dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/donate"
+                        android:fontFamily="@font/opensans"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="130dp"
+                        android:layout_gravity="center_horizontal" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardReceive"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/zircon"
+                android:layout_margin="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/rcv"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/rcv"
+                        android:layout_marginTop="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/receive"
+                        android:fontFamily="@font/opensans"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="130dp"
+                        android:layout_gravity="center_horizontal"
+                        tools:ignore="HardcodedText,SpUsage" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFoodmap"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/zircon"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/map"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/map"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/food_map"
+                    android:fontFamily="@font/opensans"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="130dp"
+                    android:layout_gravity="center_horizontal"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMyPin"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/zircon"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mypins"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/mypins"
+                    android:layout_marginTop="15dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_pins"
+                    android:fontFamily="@font/opensans"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="130dp"
+                    android:layout_gravity="center_horizontal"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardHistory"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/zircon"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/history"
+                    android:contentDescription="@string/history"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history"
+                    android:fontFamily="@font/opensans"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="130dp"
+                    android:layout_gravity="center_horizontal" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAboutus"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/zircon"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/about"
+                    android:contentDescription="@string/about"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_us"
+                    android:fontFamily="@font/opensans"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="130dp"
+                    android:layout_gravity="center_horizontal"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardContact"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/zircon"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/contact"
+                    android:contentDescription="@string/contact"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_us"
+                    android:fontFamily="@font/opensans"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="130dp"
+                    android:layout_gravity="center_horizontal"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLogout"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/zircon"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/lgout"
+                    android:contentDescription="@string/lgout"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_out"
+                    android:fontFamily="@font/opensans"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="130dp"
+                    android:layout_gravity="center_horizontal"/>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

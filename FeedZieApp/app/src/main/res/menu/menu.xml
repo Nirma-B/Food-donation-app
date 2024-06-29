@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/baseline_dashboard_24" />
+
+    <item
+        android:id="@+id/locateNGOs"
+        android:title="LocateNGOs"
+        android:icon="@drawable/mypins"/>
+
+    <item
+        android:id="@+id/Mission"
+        android:title="Mission"
+        android:icon="@drawable/baseline_info_24"/>
+</menu>
